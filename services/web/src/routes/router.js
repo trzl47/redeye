@@ -1,12 +1,12 @@
 // Components
-import RedEye from '../app/RedEye.js';
+import Main from '../app/Main.js';
 import NotFound from '../app/NotFound';
 
 export default {
 	routes: [
 		{
 			path: '/',
-			component: RedEye,
+			component: Main,
 			exact: true
 		},
 		{
