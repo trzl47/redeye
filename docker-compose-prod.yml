@@ -1,15 +1,21 @@
 version: '3'
 services:
-  web:
-    image: trzl/portfolio:redeyephoto-web_v0.0.1
-    container_name: redeyephoto-web
+  redeye-nginx:
+    image: trzl/portfolio:redeye-react.1
+    container_name: redeye-nginx
+    restart: unless-stopped
+  reverseproxy:
+    image: trzl/portfolio:redeye-proxy.1
+    container_name: redeye-proxy
     restart: unless-stopped
     expose:
       - "80"
       - "443"
+    depends_on:
+      - redeye-nginx
     environment:
-      VIRTUAL_HOST: redeyephoto.tbrownkcdev.com
-      LETSENCRYPT_HOST: redeyephoto.tbrownkcdev.com
+      VIRTUAL_HOST: redeye.tbrownkcdev.com
+      LETSENCRYPT_HOST: redeye.tbrownkcdev.com
       LETSENCRYPT_EMAIL: brownty47@gmail.com
 networks:
   default:
