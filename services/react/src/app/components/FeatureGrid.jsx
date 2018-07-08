@@ -43,12 +43,6 @@ const FeatureGrid = () => {
 				'backgroundSize': 'cover',
 			}} >
 			</div>
-			{/* <img className="img-responsive" src={require('../../img/p1.jpg')}  alt='' /> */}
-			{/* <img className="img-responsive" src={require('../../img/p2.jpg')}  alt='' /> */}
-			{/* <img className="img-responsive" src={require('../../img/p3.jpg')}  alt='' /> */}
-			{/* <img className="img-responsive" src={require('../../img/p4.jpg')}  alt='' /> */}
-			{/* <img className="img-responsive" src={require('../../img/p5.jpg')}  alt='' /> */}
-			{/* <img className="img-responsive" src={require('../../img/p6.jpg')}  alt='' /> */}
 		</div>
 	);
 };
