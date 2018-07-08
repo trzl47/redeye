@@ -1,5 +1,5 @@
 /src/server-es5.js
-/src/static/js
+/src/js
 /node_modules
 **/node_modules
 /node_modules/*
