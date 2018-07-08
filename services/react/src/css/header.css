@@ -1,0 +1,41 @@
+.header {
+  background-color: #fff;
+	text-align: center;
+}
+.header h1 {
+  color: #31363d;
+  font-size: 1rem;
+	text-transform: uppercase;
+	padding: 1rem;
+}
+@media only screen and (min-width: 768px) {
+	.header {
+		position: absolute;
+		width: 100%;
+	}
+}
+
+.nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	 height: 2rem;
+	 background-color: #cccdce;
+}
+.nav a {
+	text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-transition: color 0.25s;
+  transition: color 0.25s;
+	text-decoration: none;
+}
+.nav a:active,
+.nav a:focus,
+.nav a:hover {
+  color: #31363d;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+  text-decoration: none;
+}
